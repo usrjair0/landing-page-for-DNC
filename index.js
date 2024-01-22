@@ -11,11 +11,11 @@ function scrollright(){
 Leonardocard.style ="display:none"
 Brunacard.style ="display:flex"
 rightarrow.style ="display:none"
-leftarrow.style ="display:flex; margin-top:28px"
+leftarrow.style ="display:flex;"
 }
 function scrollleft(){
 Leonardocard.style ="display:flex"
 Brunacard.style ="display:none"
-rightarrow.style ="display:flex; margin-top:28px"
+rightarrow.style ="display:flex;"
 leftarrow.style ="display:none"
 }
