@@ -40,20 +40,21 @@
 .container_icons_text p{
     margin-left: 15px;
 }
-#video{
-    margin: 80px 50px 80px 220px;
-}
 #video-section{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: top;
 }
 #video-section-title{
     color: #247BA0;
-    margin-top: 80px;
 }
 #video-section-body{
     color: #383838;
-font-size: 16px;
+    font-size: 16px;
+    text-align: justify;
 }
 #carousel-section{
 background-color: #247BA0;
