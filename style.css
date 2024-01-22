@@ -28,22 +28,17 @@
 }
 #informational-menu{
     background-color: #eaece5;
-    display: grid; /*estou indicando que a disposição das informações será em grid (pesquisar no google)*/
-    grid-auto-flow: column;/*as grids vão se organizar em colunas*/
-    columns: auto; /*estou colocando que o tamanho das grids se dará de forma automática*/
+    display: flex;
+    padding: 50px 0;
+    flex-direction: row;
+    justify-content: space-around;
 } 
-#certificado{
-    margin: 67.11px 19.33px 68.16px 174.11px;
+.container_icons_text{
+    display: flex;
+    align-items: center;
 }
-#relogio{
-    margin: 67.42px 19.33px 68.37px 147.33px;
-}
-#gravador{
-    margin: 70px 19.33px 70px 147.33px;
-}
-.texto-informativo{
-display: flex; /*garante que conseguirei centralizar minhas informações*/
-align-items: center;
+.container_icons_text p{
+    margin-left: 15px;
 }
 #video{
     margin: 80px 50px 80px 220px;
