@@ -8,85 +8,157 @@
     fechar com -->
 
 <html lang="en">
-<head> <!--no head coloco informações que precisam ser carregadas antes da página carregar, como fontes etc-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=E, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!--esse link css é criado para que meu html esteja--> 
+  <head>
+    <!--no head coloco informações que precisam ser carregadas antes da página carregar, como fontes etc-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=E, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!--esse link css é criado para que meu html esteja-->
     <!--relacionado com meu css-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- este link de fontes foi pego do própio google fonts e apenas copiei e colei aqui no head-->
-    <title>Escola DNC </title> 
-</head>
-<body> <!--a tag h1 faz titulos-->
+    <title>Escola DNC</title>
+  </head>
+  <body>
+    <!--a tag h1 faz titulos-->
 
-<div id="top-menu">     
-    <a href="https://www.escoladnc.com.br/"><img src="./images/logo.svg" id="logo" alt="ERROR"> </a>
-    <!-- o id= "logo" pode ser colocado em qualquer parte dentro do img-->
-    <!-- o comando "a" serve para fazer um hiperlink, dessa forma quando clico no logo eu sou direcionado
+    <div id="top-menu">
+      <a href="https://www.escoladnc.com.br/"
+        ><img src="./images/logo.svg" id="logo" alt="ERROR" />
+      </a>
+      <!-- o id= "logo" pode ser colocado em qualquer parte dentro do img-->
+      <!-- o comando "a" serve para fazer um hiperlink, dessa forma quando clico no logo eu sou direcionado
          a página da dnc-->
-   <h1 id="top-menu-title"> <!--nomeando o titulo do menu superior-->
-       Dê os primeiros passos da <br><!--esse comando <br> faz uma quebra de texto (MUITO IMPORTANTE!!!)-->
-       sua carreira em Tecnologia</h1> 
-   <p id="top-menu-text"> <!--nomeando o texto do menu superior-->
-        Inscreva-se no curso gratuito de Introdução à <br>
-       Tecnologia da DNC School e aprenda os principais <br>
-       fundamentos para construir experiências efetivas.</p>
-</div>
-<div id="informational-menu">
-<!--após fazer uma divisão com o menu informacional eu adicionei algumas imagens-->
-    <div class="container_icons_text">
-        <img src="/icons/certificadodeconclusao.svg" class="icones" alt="ERROR">
-        <p class="texto-informativo"> Certificado de conclusão</p>
+      <h1 id="top-menu-title">
+        <!--nomeando o titulo do menu superior-->
+        Dê os primeiros passos da
+        <br /><!--esse comando <br> faz uma quebra de texto (MUITO IMPORTANTE!!!)-->
+        sua carreira em Tecnologia
+      </h1>
+      <p id="top-menu-text">
+        <!--nomeando o texto do menu superior-->
+        Inscreva-se no curso gratuito de Introdução à <br />
+        Tecnologia da DNC School e aprenda os principais <br />
+        fundamentos para construir experiências efetivas.
+      </p>
     </div>
-    <div class="container_icons_text">
-        <img src="/icons/relogio-horasdeconclusao.svg" class="icones" alt="ERROR">
+    <div id="informational-menu">
+      <!--após fazer uma divisão com o menu informacional eu adicionei algumas imagens-->
+      <div class="container_icons_text">
+        <img
+          src="/icons/certificadodeconclusao.svg"
+          class="icones"
+          alt="ERROR"
+        />
+        <p class="texto-informativo">Certificado de conclusão</p>
+      </div>
+      <div class="container_icons_text">
+        <img
+          src="/icons/relogio-horasdeconclusao.svg"
+          class="icones"
+          alt="ERROR"
+        />
         <p class="texto-informativo">4 horas de conteúdo</p>
-    </div>
-    <div class="container_icons_text">
-        <img src="/icons/aulasonlinegravadas.svg" class="icones" alt="ERROR">
+      </div>
+      <div class="container_icons_text">
+        <img src="/icons/aulasonlinegravadas.svg" class="icones" alt="ERROR" />
         <p class="texto-informativo">Aulas online gravadas</p>
+      </div>
+      <!--criei a classe texto informativo para mexer com esses textos do menu informacional-->
     </div>
-<!--criei a classe texto informativo para mexer com esses textos do menu informacional-->
-</div>
-<div id="video-section">
-    <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <div> <!--a sacada da div dupla é para que o sistema deixe com duas colunas--> 
-        <h1 id="video-section-title">Aprenda com especialistas e<br>
-            comece seu primeiro projeto <br><br> </h1>
-       <p id="video-section-body">Conheça o processo de desenvolvimento e entenda como utilizar <br>
-           os principais métodos e ferramentas da área para resolver<br>
-           problemas complexos.<br><br>
-   
-           Conquiste seu certificado e desenvolva um projeto prático para<br>
-            aplicar seus conhecimentos.</p>
-    </div>
-</div>
-<div id="carousel-section">
-    <h1 id="carousel-title">Mais de 500 alunos já iniciaram seus estudos</h1>
-    <div id="divcards">
-        <img id="leftarrow" onclick="scrollleft()" class="arrows" src="/icons/leftarrow.svg" alt="ERROR">
-        <img id="Leonardocard" class="cards" src="/cards/Leonardocard.svg" alt="ERROR">
-        <img id="Samanthacard" class="cards" src="/cards/Samanthacard.svg" alt="ERROR">
-        <img id="Brunacard" class="cards" src="/cards/Brunacard.svg" alt="Error">
-        <img id="rightarrow" onclick="scrollright()" class="arrows" src="/icons/rightarrow.svg" alt="ERROR">
-    </div>
-</div>
-<div id="form-section">
-    <h1 id="form-title">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
-    <form action="https://api.sheetmonkey.io/form/gQYsE854gykedEtnHjcrYG" method="POST"> 
-        <!-- ele vai postar as informações digitadas nas caixinhas--> 
-        <input type="text" placeholder="Nome" name="Name" required> <br><!-- o place holder informa o nome que fica ao n ser preenchido nd-->
-        <input type="email" placeholder="email" name="Email" required> <br>
-        <input type="number" placeholder="Telefone" name="Phone" required> <br>
-        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-        <button type="submit" >Acesse a ementa grátis</button>
-    </form>
-</div>
+    <div id="video-section">
+      <iframe
+        id="video"
+        width="502"
+        height="283"
+        src="https://www.youtube.com/embed/ITxGkd9h4n4"
+        title="DNC - A escola inovadora que forma profissionais de alta perfomance"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <div>
+        <!--a sacada da div dupla é para que o sistema deixe com duas colunas-->
+        <h1 id="video-section-title">
+          Aprenda com especialistas e<br />
+          comece seu primeiro projeto <br /><br />
+        </h1>
+        <p id="video-section-body">
+          Conheça o processo de desenvolvimento e entenda como utilizar <br />
+          os principais métodos e ferramentas da área para resolver<br />
+          problemas complexos.<br /><br />
 
+          Conquiste seu certificado e desenvolva um projeto prático para<br />
+          aplicar seus conhecimentos.
+        </p>
+      </div>
+    </div>
+    <div id="carousel-section">
+      <h1 id="carousel-title">Mais de 500 alunos já iniciaram seus estudos</h1>
+      <div id="divcards">
+        <img
+          id="leftarrow"
+          onclick="scrollleft()"
+          class="arrows"
+          src="/icons/leftarrow.svg"
+          alt="ERROR"
+        />
+        <img
+          id="Leonardocard"
+          class="cards"
+          src="/cards/Leonardocard.svg"
+          alt="ERROR"
+        />
+        <img
+          id="Samanthacard"
+          class="cards"
+          src="/cards/Samanthacard.svg"
+          alt="ERROR"
+        />
+        <img
+          id="Brunacard"
+          class="cards"
+          src="/cards/Brunacard.svg"
+          alt="Error"
+        />
+        <img
+          id="rightarrow"
+          onclick="scrollright()"
+          class="arrows"
+          src="/icons/rightarrow.svg"
+          alt="ERROR"
+        />
+      </div>
+    </div>
+    <div id="form-section">
+      <h1 id="form-title">
+        Comece agora mesmo e dê o próximo passo da sua carreira
+      </h1>
+      <form
+        action="https://api.sheetmonkey.io/form/gQYsE854gykedEtnHjcrYG"
+        method="POST"
+      >
+        <!-- ele vai postar as informações digitadas nas caixinhas-->
+        <input type="text" placeholder="Nome" name="Name" required />
+        <br /><!-- o place holder informa o nome que fica ao n ser preenchido nd-->
+        <input type="email" placeholder="email" name="Email" required /> <br />
+        <input type="number" placeholder="Telefone" name="Phone" required />
+        <br />
+        <input
+          type="hidden"
+          name="Created"
+          value="x-sheetmonkey-current-date-time"
+        />
+        <button type="submit">Acesse a ementa grátis</button>
+      </form>
+    </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
