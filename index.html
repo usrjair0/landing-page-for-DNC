@@ -23,6 +23,10 @@
       rel="stylesheet"
     />
     <!-- este link de fontes foi pego do própio google fonts e apenas copiei e colei aqui no head-->
+
+    <!--SWIPER CSS-->
+    <link rel="stylesheet" href="./swiper css/swiper-bundle.min.css">
+    
     <title>Escola DNC</title>
   </head>
   <body>
@@ -102,17 +106,20 @@
     <div id="carousel-section">
       <h1 id="carousel-title">Mais de 500 alunos já iniciaram seus estudos</h1>
 
-        <div class="body1">
-            <div class="slide-container">
-                <div class="slide-content">
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="./cards/Brunacard.svg" alt="error">
-                        </div>
-                    </div>
-                </div>
+      <div class="body1">
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                  <img src="./cards/Brunacard.svg" alt="error">
               </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
+      </div>
       
     </div>
     <div id="form-section">
@@ -139,5 +146,8 @@
     </div>
 
     <script src="index.js"></script>
+
+    <!--SWIPER JS-->
+    <script src="./swiper js/swiper-bundle.min.js"></script>
   </body>
 </html>
