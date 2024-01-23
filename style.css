@@ -92,6 +92,7 @@ transition-duration: 0.8s;
 }
 #Brunacard{
     display: none;
+    transition: 2s;
 }
 #form-section{
     width: 100%;
