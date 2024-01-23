@@ -1,5 +1,7 @@
 *{
     margin: 0px; /* sempre usar pois faz com que não haja interferência nas medidas do margin top etc*/
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'inter'; /* Mudar fonte*/
 }
 #logo{ 
@@ -70,29 +72,11 @@
     font-size: 32px;
     line-height: 48px;
 }
-#divcards{
+.slide-container {
+    margin-top: 40px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    column-gap: 30px;
-    padding-top: 30px;
-}
-.arrows{
-    height: 90px;
-    margin: 0;
-    cursor: pointer;
-}
-.arrows:hover{
-transform: translateY(-7px);
-transition-duration: 0.8s;
-}
-#leftarrow{
-    display: none;
-}
-#Brunacard{
-    display: none;
-    transition: 2s;
+    justify-content: center;
 }
 #form-section{
     width: 100%;
