@@ -10,18 +10,15 @@
 <html lang="en">
   <head>
     <!--no head coloco informações que precisam ser carregadas antes da página carregar, como fontes etc-->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=E, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <!--esse link css é criado para que meu html esteja-->
     <!--relacionado com meu css-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- este link de fontes foi pego do própio google fonts e apenas copiei e colei aqui no head-->
 
     <!--SWIPER CSS-->
@@ -112,20 +109,16 @@
       <div class="body1">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./cards/Brunacard.svg" alt="error">
-              </div>
-              <div class="swiper-slop[ide">
-                <img src="./cards/Leonardocard.svg" alt="error">
-              </div>
-              <div class="swiper-slide">
-                <img src="./cards/Samanthacard.svg" alt="error"> 
-              </div>
+
+            <div class="swiper-slide"><img src="./cards/Brunacard.svg" alt="error"></div>
+            <div class="swiper-slide"><img src="./cards/Leonardocard.svg" alt="error"></div>
+            <div class="swiper-slide"><img src="./cards/Samanthacard.svg" alt="error"></div> 
+              
           </div>
+
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <div class="swiper-scrollbar"></div>
-          <div class="swiper-pagination"></div>
+
         </div>
       </div>
       
@@ -156,6 +149,6 @@
     <script src="./index.js"></script>
 
     <!--SWIPER JS-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
