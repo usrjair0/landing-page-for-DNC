@@ -71,20 +71,14 @@
     font-size: 32px;
     line-height: 48px;
 }
-
-.body1 {
-    position: relative;
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
+.container {
     margin: 0;
-    padding: 0;
+    padding: 80px 0;
   }
 
   .swiper {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
   }
 
   .swiper-slide {
@@ -96,7 +90,7 @@
 
   .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 60%;
     height: 100%;
     object-fit: cover;
 }
