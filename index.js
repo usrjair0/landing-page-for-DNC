@@ -5,8 +5,8 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
     effect: 'cube',
-  cubeEffect: {
+    cubeEffect: {
     slideShadows: false,
-  },
-    
+    },
+    loop: 'true',
 });

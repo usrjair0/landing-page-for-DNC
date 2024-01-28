@@ -59,11 +59,12 @@
 }
 #video-section-body{
     color: #383838;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
 }
 #carousel-section{
     background-color: #247BA0;
+    padding-top: 20px;
 }
 #carousel-title{
     color: #EAECE5;
@@ -73,7 +74,7 @@
 }
 .container {
     margin: 0;
-    padding: 80px 0;
+    padding: 50px 60px;
   }
 
   .swiper {
@@ -93,6 +94,15 @@
     width: 60%;
     height: 100%;
     object-fit: cover;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: '';
+}
+.swiper-button-next,
+.swiper-button-prev {
+    font-size: 5rem;
+    color: #FFFFFF;
 }
 
 #form-section{
