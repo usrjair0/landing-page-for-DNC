@@ -71,22 +71,31 @@
     font-size: 32px;
     line-height: 48px;
 }
-.body1{
-    width: 100%;
-    background-color: #247BA0;
-}
-.swiper {
-    margin-top: 40px;
-    width: 50%;
-    height: 80%; 
-}
-.swiper-slide {
+
+.body1 {
+    position: relative;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 70%;
+    height: 70%;
+  }
+
+  .swiper-slide {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.swiper-slide img {
+  }
+
+  .swiper-slide img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
