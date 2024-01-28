@@ -9,46 +9,38 @@
     <meta charset="utf-8" />
     <title>Swiper demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <!--esse link css é criado para que meu html esteja relacionado com meu css-->
     <link rel="stylesheet" href="style.css" />
-    <!--esse link css é criado para que meu html esteja-->
-    <!--relacionado com meu css-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- este link de fontes foi pego do própio google fonts e apenas copiei e colei aqui no head-->
 
     <!--SWIPER CSS-->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
     <title>Escola DNC</title>
   </head>
   <body>
-    <!--a tag h1 faz titulos-->
-
     <div id="top-menu">
       <a href="https://www.escoladnc.com.br/"
         ><img src="./images/logo.svg" id="logo" alt="ERROR" />
       </a>
-      <!-- o id= "logo" pode ser colocado em qualquer parte dentro do img-->
-      <!-- o comando "a" serve para fazer um hiperlink, dessa forma quando clico no logo eu sou direcionado
-         a página da dnc-->
       <h1 id="top-menu-title">
-        <!--nomeando o titulo do menu superior-->
         Dê os primeiros passos da
-        <br /><!--esse comando <br> faz uma quebra de texto (MUITO IMPORTANTE!!!)-->
+        <br />
         sua carreira em Tecnologia
       </h1>
       <p id="top-menu-text">
-        <!--nomeando o texto do menu superior-->
         Inscreva-se no curso gratuito de Introdução à <br />
         Tecnologia da DNC School e aprenda os principais <br />
         fundamentos para construir experiências efetivas.
       </p>
     </div>
     <div id="informational-menu">
-      <!--após fazer uma divisão com o menu informacional eu adicionei algumas imagens-->
       <div class="container_icons_text">
         <img
           src="/icons/certificadodeconclusao.svg"
@@ -69,7 +61,6 @@
         <img src="/icons/aulasonlinegravadas.svg" class="icones" alt="ERROR" />
         <p class="texto-informativo">Aulas online gravadas</p>
       </div>
-      <!--criei a classe texto informativo para mexer com esses textos do menu informacional-->
     </div>
     <div id="video-section">
       <iframe
@@ -81,9 +72,9 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
-      ></iframe>
+      >
+      </iframe>
       <div>
-        <!--a sacada da div dupla é para que o sistema deixe com duas colunas-->
         <h1 id="video-section-title">
           Aprenda com especialistas e<br />
           comece seu primeiro projeto <br /><br />
@@ -100,7 +91,6 @@
     </div>
     <div id="carousel-section">
       <h1 id="carousel-title">Mais de 500 alunos já iniciaram seus estudos</h1>
-
       <div class="body1">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">

@@ -73,6 +73,7 @@
     line-height: 48px;
 }
 .body1{
+    width: 100%;
     position: relative;
 }
 .swiper {
